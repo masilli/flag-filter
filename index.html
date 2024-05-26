@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun with flags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <p>it's time for</p>
+            <h1>🏁 fun with flags 🚩</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container">
+            <form id="filter-dashboard">
+                <label for="choose-colors">choose colors:</label>
+                <input type="checkbox">
+                <label for="has-symbol">coat of arms or symbol?</label>
+                <input type="radio" id="has-symbol" name="has-symbol" value="no">
+                <input type="radio" id="has-symbol" name="has-symbol" value="yes">
+                <label for="choose-continent">continent</label>
+                <select id="choose-continent">
+                    <option value="all" selected>all</option>
+                    <option value="africa">africa</option>
+                    <option value="asia">asia</option>
+                    <option value="europe">europe</option>
+                    <option value="north-america">north america</option>
+                    <option value="south-america">south america</option>
+                    <option value="oceania">oceania</option>
+                </select>
+                <button type="submit">go</button>
+            </form>
+        </section>
+
+        <section class="container flags-container">
+            <h2>results: <span id="total-results">197</span></h2>
+            <div id="content"></div>
+        </section>
+
+    </main>
+
+    <script src="index.js" type="module"></script>
+
+</body>
+</html>
