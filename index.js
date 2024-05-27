@@ -6,10 +6,12 @@ const chosenContinent = document.getElementById("choose-continent")
 
 const contDiv = document.getElementById("content")
 const totalResults = document.getElementById("total-results")
+const infoP = document.querySelector(".info")
 
 //console.log(countriesArray)
 
 let matchingFlags = countriesArray
+renderFlags()
 
 filterDash.addEventListener('submit', function(e){
     e.preventDefault()
@@ -43,10 +45,59 @@ function renderFlags() {
     matchingFlags.forEach((region, index) => {
         setTimeout(function() {
             const countryNameElement = document.createElement('p');
-            countryNameElement.innerHTML = `<img src="${region.flag}" height="100"><br>${region.name}`;
-            contDiv.appendChild(countryNameElement);
-        }, index * 25); // Each element is delayed by 500ms multiplied by its index
+            countryNameElement.innerHTML = `<img src="${region.flag}" height="100"><br>${region.name}`
+            contDiv.appendChild(countryNameElement)
+        }, index * 20)
     });
+
+    function getColorsCount(matchingFlags) {
+        const colorsCount = {}
+    
+        for (let flag of matchingFlags) {
+            if (Array.isArray(flag.colors)) {
+                for (let color of flag.colors) {
+                    if (colorsCount[color]) {
+                        colorsCount[color]++
+                    } else {
+                        colorsCount[color] = 1
+                    }
+                }
+            } else {
+                console.warn(`The colors property of ${flag.name} is not an array`)
+            }
+        }
+    
+        return colorsCount;
+    }
+    
+    console.log(getColorsCount(matchingFlags))
+    
+    function renderColorsCount(colorsCount) {
+        const container = document.querySelector(".info")
+        container.innerHTML = "" // Clear the container before rendering new content
+    
+        // for (let color in colorsCount) {
+        //     const colorElement = document.createElement("div");
+        //     colorElement.textContent = `${color}: ${colorsCount[color]}`;
+        //     container.appendChild(colorElement);
+        // }
+        const sortedColors = Object.entries(colorsCount).sort((a, b) => b[1] - a[1])
+
+        // Render the sorted array
+        for (let [color, count] of sortedColors) {
+            const colorElement = document.createElement("div")
+            if (color === "black" || color === "blue" || color === "maroon") {
+                colorElement.innerHTML = `${color}<br><span class="individual-color-count" style="background:${color};color:#fff;">${count}</span>`
+            } else {
+                colorElement.innerHTML = `${color}<br><span class="individual-color-count" style="background:${color}">${count}</span>`
+            }
+            
+            container.appendChild(colorElement)
+        }
+    }
+    
+    const colorsCount = getColorsCount(matchingFlags)
+    renderColorsCount(colorsCount)
 
 }
 
@@ -64,18 +115,54 @@ function renderFlags() {
     //return false; // Return false if colors property is undefined
 //});
 
-function getColorsArray(countriesArray) {
-    const colorsSet = new Set();
-    for (let flag of countriesArray) {
-        if (Array.isArray(flag.colors)) {
-            for (let color of flag.colors) {
-                colorsSet.add(color);
-            }
-        } else {
-            console.warn(`The colors property of ${flag.name} is not an array`);
-        }
-    }
-    return Array.from(colorsSet);
-}
+// function getColorsArray(countriesArray) {
+//     const colorsSet = new Set();
+//     for (let flag of countriesArray) {
+//         if (Array.isArray(flag.colors)) {
+//             for (let color of flag.colors) {
+//                 colorsSet.add(color);
+//             }
+//         } else {
+//             console.warn(`The colors property of ${flag.name} is not an array`);
+//         }
+//     }
+//     return Array.from(colorsSet);
+// }
 
-console.log(getColorsArray(countriesArray));
+// console.log(getColorsArray(countriesArray))
+
+// function getColorsCount(countriesArray) {
+//     const colorsCount = {};
+
+//     for (let flag of countriesArray) {
+//         if (Array.isArray(flag.colors)) {
+//             for (let color of flag.colors) {
+//                 if (colorsCount[color]) {
+//                     colorsCount[color]++;
+//                 } else {
+//                     colorsCount[color] = 1;
+//                 }
+//             }
+//         } else {
+//             console.warn(`The colors property of ${flag.name} is not an array`);
+//         }
+//     }
+
+//     return colorsCount;
+// }
+
+// console.log(getColorsCount(countriesArray))
+
+// function renderColorsCount(colorsCount) {
+//     const container = document.querySelector(".info");
+//     container.innerHTML = ""; // Clear the container before rendering new content
+
+//     for (let color in colorsCount) {
+//         const colorElement = document.createElement("div");
+//         colorElement.textContent = `${color}: ${colorsCount[color]}`;
+//         container.appendChild(colorElement);
+//     }
+// }
+
+// const colorsCount = getColorsCount(countriesArray);
+// renderColorsCount(colorsCount);
