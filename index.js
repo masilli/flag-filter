@@ -43,7 +43,8 @@ function renderFlags() {
     matchingFlags.forEach((region, index) => {
         setTimeout(function() {
             const countryNameElement = document.createElement('p');
-            countryNameElement.innerHTML = `<img src="${region.flag}" height="100"><br><span class="region-name">${region.name}</span>`
+            countryNameElement.classList.add("country")
+            countryNameElement.innerHTML = `<img src="${region.flag}"><br><span class="region-name">${region.name}</span>`
             contDiv.appendChild(countryNameElement)
         }, index * 20)
     });

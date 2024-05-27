@@ -20,22 +20,32 @@
         <section class="container">
 
             <form id="filter-dashboard">
-                <label for="choose-colors">choose colors:</label>
-                <input type="checkbox">
-                <label for="has-symbol">coat of arms or symbol?</label>
-                <input type="radio" id="has-symbol" name="has-symbol" value="no">
-                <input type="radio" id="has-symbol" name="has-symbol" value="yes">
-                <label for="choose-continent">continent</label>
-                <select id="choose-continent">
-                    <option value="all" selected>all</option>
-                    <option value="africa">africa</option>
-                    <option value="asia">asia</option>
-                    <option value="europe">europe</option>
-                    <option value="north-america">north america</option>
-                    <option value="south-america">south america</option>
-                    <option value="oceania">oceania</option>
-                </select>
-                <button type="submit">go</button>
+                <div>
+                    <label for="choose-colors">choose colors:</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <p>coat of arms or symbol?</p>
+                    <label for="has-symbol-yes">yes</label>
+                    <input type="radio" id="has-symbol-yes" name="has-symbol" value="yes">
+                    <label for="has-symbol-no">no</label>
+                    <input type="radio" id="has-symbol-no" name="has-symbol" value="no">
+                </div>
+                <div>
+                    <label for="choose-continent">continent</label>
+                    <select id="choose-continent">
+                        <option value="all" selected>all</option>
+                        <option value="africa">africa</option>
+                        <option value="asia">asia</option>
+                        <option value="europe">europe</option>
+                        <option value="north-america">north america</option>
+                        <option value="south-america">south america</option>
+                        <option value="oceania">oceania</option>
+                    </select>
+                </div>
+                <div id="submit-filters-button">
+                    <button type="submit">filter</button>
+                </div>
             </form>
 
         </section>
