@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fun with flags</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/flag-favicon.png" type="image/x-icon">
 </head>
+
 <body>
 
     <header>
@@ -20,20 +23,61 @@
         <section class="container">
 
             <form id="filter-dashboard">
-                <div>
-                    <label for="choose-colors">choose colors:</label>
-                    <input type="checkbox">
+                <div class="filter-container">
+                    <p class="filter-title">colors</p>
+                    <div class="filter-inner-container">
+                        <div>
+                            <input type="checkbox" id="checkbox1" name="checkbox" value="red">
+                            <label for="checkbox1">Red</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox2" name="checkbox" value="white">
+                            <label for="checkbox2">White</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox3" name="checkbox" value="blue">
+                            <label for="checkbox3">Blue</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox4" name="checkbox" value="green">
+                            <label for="checkbox4">Green</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox5" name="checkbox" value="yellow">
+                            <label for="checkbox5">Yellow</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox6" name="checkbox" value="black">
+                            <label for="checkbox6">Black</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox7" name="checkbox" value="gold">
+                            <label for="checkbox7">Gold</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox8" name="checkbox" value="orange">
+                            <label for="checkbox8">Orange</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox9" name="checkbox" value="maroon">
+                            <label for="checkbox9">Maroon</label>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p>coat of arms or symbol?</p>
-                    <label for="has-symbol-yes">yes</label>
-                    <input type="radio" id="has-symbol-yes" name="has-symbol" value="yes">
-                    <label for="has-symbol-no">no</label>
-                    <input type="radio" id="has-symbol-no" name="has-symbol" value="no">
+                <div class="filter-container">
+                    <p class="filter-title">coat of arms or symbol?</p>
+                    <div class="filter-inner-container">
+                        <label for="has-symbol-either">either</label>
+                        <input type="radio" id="has-symbol-either" name="has-symbol" value="either" checked>
+                        <label for="has-symbol-yes">yes</label>
+                        <input type="radio" id="has-symbol-yes" name="has-symbol" value="yes">
+                        <label for="has-symbol-no">no</label>
+                        <input type="radio" id="has-symbol-no" name="has-symbol" value="no">
+                    </div>
                 </div>
-                <div>
-                    <label for="choose-continent">continent</label>
-                    <select id="choose-continent">
+                <div class="filter-container">
+                    <p class="filter-title">continent</p>
+                    <select class="filter-inner-container" id="choose-continent">
                         <option value="all" selected>all</option>
                         <option value="africa">africa</option>
                         <option value="asia">asia</option>
@@ -64,4 +108,5 @@
     <script src="index.js" type="module"></script>
 
 </body>
+
 </html>

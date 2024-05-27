@@ -31,6 +31,24 @@ header {
     justify-content: space-around;
 }
 
+.filter-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-inner-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 #submit-filters-button {
     flex-basis: 100%;
     align-self: center;

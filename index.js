@@ -2,11 +2,12 @@ import {countriesArray} from './countries.js'
 
 const filterDash = document.getElementById("filter-dashboard")
 
+const yesSymbolRadio = document.getElementById("has-symbol-yes")
+const noSymbolRadio = document.getElementById("has-symbol-no")
 const chosenContinent = document.getElementById("choose-continent")
 
 const contDiv = document.getElementById("content")
 const totalResults = document.getElementById("total-results")
-const infoP = document.querySelector(".info")
 
 //console.log(countriesArray)
 
@@ -16,12 +17,42 @@ renderFlags()
 filterDash.addEventListener('submit', function(e){
     e.preventDefault()
 
+    // if (chosenContinent.value !== 'all'){
+    //     matchingFlags = countriesArray.filter(function(country){
+    //         return country.continent === chosenContinent.value
+    //     })
+    // } else {
+    //     matchingFlags = countriesArray
+    // }
+
+    // if (yesSymbolRadio.checked){
+    //     matchingFlags = countriesArray.filter(function(country){
+    //         return country.hasSymbol
+    //     })
+    // } else if (noSymbolRadio.checked){
+    //     matchingFlags = countriesArray.filter(function(country){
+    //         return !country.hasSymbol
+    //     })
+    // }
+
     if (chosenContinent.value !== 'all'){
-        matchingFlags = countriesArray.filter(function(country){
-            return country.continent === chosenContinent.value
-        })
+
+        if (yesSymbolRadio.checked){
+            matchingFlags = countriesArray.filter(function(country){
+                return country.continent === chosenContinent.value && country.hasSymbol
+            })
+        } else if (noSymbolRadio.checked){
+            matchingFlags = countriesArray.filter(function(country){
+                return country.continent === chosenContinent.value && !country.hasSymbol
+            })
+        } else {
+            matchingFlags = countriesArray.filter(function(country){
+                return country.continent === chosenContinent.value
+            })
+        }
+
     } else {
-        matchingFlags = countriesArray 
+        matchingFlags = countriesArray
     }
 
     renderFlags()
@@ -34,20 +65,21 @@ function renderFlags() {
 
     totalResults.textContent = matchingFlags.length
 
-    // matchingFlags.forEach(region => {
-    //     const countryNameElement = document.createElement('p');
-    //     countryNameElement.innerHTML = `<img src="${region.flag}" height="100"><br>${region.name}`;
-    //     contDiv.appendChild(countryNameElement);
-    // });
-
-    matchingFlags.forEach((region, index) => {
-        setTimeout(function() {
-            const countryNameElement = document.createElement('p');
-            countryNameElement.classList.add("country")
-            countryNameElement.innerHTML = `<img src="${region.flag}"><br><span class="region-name">${region.name}</span>`
-            contDiv.appendChild(countryNameElement)
-        }, index * 20)
+    matchingFlags.forEach(region => {
+        const countryNameElement = document.createElement('p');
+        countryNameElement.classList.add("country")
+        countryNameElement.innerHTML = `<img src="${region.flag}"><br><span class="region-name">${region.name}</span>`
+        contDiv.appendChild(countryNameElement);
     });
+
+    // matchingFlags.forEach((region, index) => {
+    //     setTimeout(function() {
+    //         const countryNameElement = document.createElement('p');
+    //         countryNameElement.classList.add("country")
+    //         countryNameElement.innerHTML = `<img src="${region.flag}"><br><span class="region-name">${region.name}</span>`
+    //         contDiv.appendChild(countryNameElement)
+    //     }, index * 20)
+    // });
 
     function getColorsCount(matchingFlags) {
         const colorsCount = {}
