@@ -32,7 +32,15 @@ img {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+#content .region-name {
+    display: inline-block;
+    max-width: 100px;
+    text-wrap: wrap;
 }
 
 .flags-container h2 {
@@ -40,7 +48,7 @@ img {
     font-size: 1.2rem;
     margin-bottom: 20px;
     border-bottom: 1px dotted #222;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .flags-container #total-results {
@@ -55,14 +63,12 @@ img {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    /* gap: 20px; */
     margin-bottom: 20px;
     border-bottom: 1px dotted #222;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .flags-container .info .individual-color-count {
-    /* background-color: #fff; */
     padding: .2em .4em;
     border-radius: .5em;
     line-height: 2;

@@ -16,14 +16,12 @@ renderFlags()
 filterDash.addEventListener('submit', function(e){
     e.preventDefault()
 
-    if (chosenContinent.value){
+    if (chosenContinent.value !== 'all'){
         matchingFlags = countriesArray.filter(function(country){
             return country.continent === chosenContinent.value
         })
     } else {
-        matchingFlags = countriesArray.filter(function(country){
-            return country
-        })
+        matchingFlags = countriesArray 
     }
 
     renderFlags()
@@ -45,7 +43,7 @@ function renderFlags() {
     matchingFlags.forEach((region, index) => {
         setTimeout(function() {
             const countryNameElement = document.createElement('p');
-            countryNameElement.innerHTML = `<img src="${region.flag}" height="100"><br>${region.name}`
+            countryNameElement.innerHTML = `<img src="${region.flag}" height="100"><br><span class="region-name">${region.name}</span>`
             contDiv.appendChild(countryNameElement)
         }, index * 20)
     });
