@@ -45,13 +45,14 @@ header {
     outline: 1px solid #aaa;
     border-radius: 10px;
     padding: 16px;
+    text-align: center;
 }
 
 .filter-inner-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    text-align: center;
 }
 
 .filter-inner-container div {
@@ -83,7 +84,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-
 }
 
 #content .country {
@@ -129,6 +129,7 @@ header {
 
 .flags-container .info {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
     margin-bottom: 20px;
@@ -146,7 +147,13 @@ header {
 /* media & container queries */
 @media all and (width < 1024px) {
     .container {
-        width: 95vw;
+        width: 98vw;
+    }
+    #content {
+        gap: 8px;
+    }
+    #content .country {
+        padding: 10px;
     }
 }
 
