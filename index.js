@@ -4,6 +4,7 @@ const filterDash = document.getElementById("filter-dashboard")
 
 const yesSymbolRadio = document.getElementById("has-symbol-yes")
 const noSymbolRadio = document.getElementById("has-symbol-no")
+const eitherSymbolRadio = document.getElementById("has-symbol-either")
 const chosenContinent = document.getElementById("choose-continent")
 
 const contDiv = document.getElementById("content")
@@ -13,10 +14,16 @@ const totalResults = document.getElementById("total-results")
 
 let matchingFlags = countriesArray
 
-renderFlags()
+// renderFlags()
 
-filterDash.addEventListener('submit', function(e){
-    e.preventDefault()
+function getSelectedColors(containerId) {
+    const container = document.getElementById(containerId);
+    const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+    return Array.from(checkboxes).map(checkbox => checkbox.value);
+}
+
+// filterDash.addEventListener('submit', function(e){
+//     e.preventDefault()
 
     // if (chosenContinent.value !== 'all'){
     //     matchingFlags = countriesArray.filter(function(country){
@@ -36,29 +43,64 @@ filterDash.addEventListener('submit', function(e){
     //     })
     // }
 
-    if (chosenContinent.value !== 'all'){
+    // if (chosenContinent.value !== 'all'){
 
-        if (yesSymbolRadio.checked){
-            matchingFlags = countriesArray.filter(function(country){
-                return country.continent === chosenContinent.value && country.hasSymbol
-            })
-        } else if (noSymbolRadio.checked){
-            matchingFlags = countriesArray.filter(function(country){
-                return country.continent === chosenContinent.value && !country.hasSymbol
-            })
-        } else {
-            matchingFlags = countriesArray.filter(function(country){
-                return country.continent === chosenContinent.value
-            })
-        }
+    //     if (yesSymbolRadio.checked){
+    //         matchingFlags = countriesArray.filter(function(country){
+    //             return country.continent === chosenContinent.value && country.hasSymbol
+    //         })
+    //     } else if (noSymbolRadio.checked){
+    //         matchingFlags = countriesArray.filter(function(country){
+    //             return country.continent === chosenContinent.value && !country.hasSymbol
+    //         })
+    //     } else {
+    //         matchingFlags = countriesArray.filter(function(country){
+    //             return country.continent === chosenContinent.value
+    //         })
+    //     }
 
-    } else {
-        matchingFlags = countriesArray
-    }
+    // } else {
+    //     matchingFlags = countriesArray
+    // }
+
+//     matchingFlags = countriesArray.filter(function (country) {
+//         let matchesContinent = chosenContinent.value === 'all' || chosenContinent.value === country.continent
+//         let matchesSymbol
+
+//         if (yesSymbolRadio.checked) {
+//             matchesSymbol = country.hasSymbol
+//         } else if (noSymbolRadio.checked) {
+//             matchesSymbol = !country.hasSymbol
+//         } else {
+//             matchesSymbol = true
+//         }
+
+//         return matchesContinent && matchesSymbol
+//     });
+
+//     renderFlags()
+
+// })
+
+filterDash.addEventListener('submit', function (e) {
+    e.preventDefault()
+
+    let includeColors = getSelectedColors('filter-container-include-colors')
+    let excludeColors = getSelectedColors('filter-container-exclude-colors')
+
+    matchingFlags = countriesArray.filter(function (country) {
+        let matchesContinent = chosenContinent.value === 'all' || chosenContinent.value === country.continent
+        let matchesSymbol = yesSymbolRadio.checked ? country.hasSymbol : noSymbolRadio.checked ? !country.hasSymbol : true
+        let matchesIncludeColors = includeColors.length === 0 || includeColors.some(color => country.colors.includes(color))
+        let matchesExcludeColors = excludeColors.length === 0 || !excludeColors.some(color => country.colors.includes(color))
+        
+        return matchesContinent && matchesSymbol && matchesIncludeColors && matchesExcludeColors
+    });
 
     renderFlags()
+});
 
-})
+renderFlags()
 
 function renderFlags() {
     contDiv.innerHTML = ''

@@ -32,19 +32,6 @@ header {
     gap: 10px;
 }
 
-@container (width < 1200px) {
-    #filter-dashboard {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .filter-container {
-        grid-column: 1 / 1;
-    }
-    #submit-filters-button {
-        grid-column: 1 / 1;
-    }
-}
-
 .filter-title {
     font-weight: bold;
     margin-bottom: 20px;
@@ -154,4 +141,25 @@ header {
     border-radius: .5em;
     line-height: 2;
     font-weight: bold;
+}
+
+/* media & container queries */
+@media all and (width < 1024px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+
+@container (width < 1200px) {
+    #filter-dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .filter-container {
+        grid-column: 1 / 1;
+    }
+    #submit-filters-button {
+        grid-column: 1 / 1;
+    }
 }
