@@ -12,6 +12,7 @@ const totalResults = document.getElementById("total-results")
 //console.log(countriesArray)
 
 let matchingFlags = countriesArray
+
 renderFlags()
 
 filterDash.addEventListener('submit', function(e){
@@ -101,7 +102,7 @@ function renderFlags() {
         return colorsCount;
     }
     
-    console.log(getColorsCount(matchingFlags))
+    //console.log(getColorsCount(matchingFlags))
     
     function renderColorsCount(colorsCount) {
         const container = document.querySelector(".info")
