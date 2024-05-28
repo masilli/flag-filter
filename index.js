@@ -124,6 +124,16 @@ function renderFlags() {
     //     }, index * 20)
     // });
 
+    // create checkboxes
+    function colorCheckboxes() {
+        const checkboxes = document.querySelectorAll("input[type='checkbox']")
+        checkboxes.forEach(checkbox => {
+            checkbox.style.backgroundColor = checkbox.value
+        })
+    }
+
+    colorCheckboxes()
+
     function getColorsCount(matchingFlags) {
         const colorsCount = {}
     
