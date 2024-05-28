@@ -77,7 +77,7 @@ header {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: relative;
-    /* border-radius: 4px; */
+    border-radius: 2px;
 }
 
 .filter-inner-container input[type="checkbox"]:checked::before {
@@ -212,12 +212,10 @@ header {
     header h1 {
         font-size: 1.5rem;
     }
-    /* #content {
-        gap: 8px;
+    .filter-inner-container input[type="checkbox"]{
+        height:28px;
+        width:28px;
     }
-    #content .country {
-        padding: 10px;
-    } */
 }
 
 
