@@ -23,8 +23,49 @@
         <section class="container">
 
             <form id="filter-dashboard">
-                <div class="filter-container">
-                    <p class="filter-title">colors</p>
+                <div class="filter-container" id="filter-container-include-colors">
+                    <p class="filter-title">include colors:</p>
+                    <div class="filter-inner-container">
+                        <div>
+                            <input type="checkbox" id="checkbox1" name="checkbox" value="red">
+                            <label for="checkbox1">Red</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox2" name="checkbox" value="white">
+                            <label for="checkbox2">White</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox3" name="checkbox" value="blue">
+                            <label for="checkbox3">Blue</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox4" name="checkbox" value="green">
+                            <label for="checkbox4">Green</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox5" name="checkbox" value="yellow">
+                            <label for="checkbox5">Yellow</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox6" name="checkbox" value="black">
+                            <label for="checkbox6">Black</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox7" name="checkbox" value="gold">
+                            <label for="checkbox7">Gold</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox8" name="checkbox" value="orange">
+                            <label for="checkbox8">Orange</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox9" name="checkbox" value="maroon">
+                            <label for="checkbox9">Maroon</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-container" id="filter-container-include-colors">
+                    <p class="filter-title">exclude colors:</p>
                     <div class="filter-inner-container">
                         <div>
                             <input type="checkbox" id="checkbox1" name="checkbox" value="red">
@@ -65,14 +106,20 @@
                     </div>
                 </div>
                 <div class="filter-container">
-                    <p class="filter-title">coat of arms or symbol?</p>
+                    <p class="filter-title">flag has coat of arms or symbol?</p>
                     <div class="filter-inner-container">
-                        <label for="has-symbol-either">either</label>
-                        <input type="radio" id="has-symbol-either" name="has-symbol" value="either" checked>
-                        <label for="has-symbol-yes">yes</label>
-                        <input type="radio" id="has-symbol-yes" name="has-symbol" value="yes">
-                        <label for="has-symbol-no">no</label>
-                        <input type="radio" id="has-symbol-no" name="has-symbol" value="no">
+                        <div>
+                            <input type="radio" id="has-symbol-either" name="has-symbol" value="either" checked>
+                            <label for="has-symbol-either">either</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="has-symbol-yes" name="has-symbol" value="yes">
+                            <label for="has-symbol-yes">yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="has-symbol-no" name="has-symbol" value="no">
+                            <label for="has-symbol-no">no</label>
+                        </div>
                     </div>
                 </div>
                 <div class="filter-container">
@@ -88,7 +135,7 @@
                     </select>
                 </div>
                 <div id="submit-filters-button">
-                    <button type="submit">filter</button>
+                    <button type="submit">apply filters</button>
                 </div>
             </form>
 
