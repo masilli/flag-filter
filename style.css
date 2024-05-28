@@ -219,7 +219,7 @@ header {
 }
 
 
-@container (width < 1200px) {
+@container (width < 840px) {
     #filter-dashboard {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
