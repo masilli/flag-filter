@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun with flags</title>
+    <link rel="stylesheet" href="style-side.css">
+    <link rel="shortcut icon" href="assets/flag-favicon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/433a365d71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <p>it's time for</p>
+            <h1>🏁 fun with flags 🚩</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="flags-container">
+
+            <aside>
+                <h2>showing <span id="total-results"></span> flags</h2>
+                <hr>
+                <form id="filter-dashboard">
+                    <div class="options-container" id="color-options">
+                        <h3>colors</h3>
+                        <div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-maroon" value="maroon" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">maroon</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-red" value="red" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">red</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-orange" value="orange" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">orange</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-gold" value="gold" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">gold</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-yellow" value="yellow" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">yellow</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-green" value="green" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">green</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-blue" value="blue" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">blue</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-black" value="black" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">black</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="color-white" value="white" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">white</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="options-container" id="continent-options">
+                        <h3>continents</h3>
+                        <div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="africa" value="africa" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">africa</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="asia" value="asia" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">asia</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="europe" value="europe" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">europe</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="north-america" value="north-america" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">north america</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="south-america" value="south-america" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">south america</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="oceania" value="oceania" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">oceania</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="options-container" id="flag-options">
+                        <h3>flag types</h3>
+                        <div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="bicolor" value="bicolor" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">bicolor</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="tricolor" value="tricolor" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">tricolor</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="canton" value="canton" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">canton</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="diagonal" value="diagonal" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">diagonal</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="quartered" value="quartered" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">quartered</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="options-container" id="symbol-options">
+                        <h3>symbols</h3>
+                        <div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="coat-arms" value="coat-arms" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">coat of arms</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="circle" value="circle" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">circle</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="cross" value="cross" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">cross</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="sun" value="sun" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">sun</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="star" value="star" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">star</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" id="moon" value="moon" checked>
+                                    <span class="slider"></span>
+                                    <span class="checkbox-name">moon</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="submit-filters-button">
+                        <button type="submit">apply filters</button>
+                    </div>
+                </form>
+            </aside>
+
+            <div id="content"></div>
+
+        </section>
+
+    </main>
+
+    <script src="index-side.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+header {
+    text-align: center;
+    background: #fff;
+}
+
+.container {
+    width: 66vw;
+    /* width: clamp(90vw, 66vw, 90vw); */
+    padding: 40px;
+    margin: 0 auto;
+    container-type: inline-size;
+}
+
+
+#content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+#content .country {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    transition: all .3s ease;
+    height: fit-content;
+}
+
+#content .country:hover,
+#content .country:focus {
+    scale: 1.1;
+    background-color: rgba(255, 255, 255, .75);
+    /* cursor: pointer; */
+}
+
+#content .country img {
+    height: 10vh;
+    margin: 0 auto 20px;
+}
+
+#content .region-name {
+    display: inline-block;
+    max-width: 100px;
+    text-wrap: wrap;
+}
+
+.flags-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.flags-container aside {
+    padding: 20px;
+    background: #ccc;
+}
+
+.flags-container aside hr {
+    margin: 20px auto;
+}
+
+.flags-container h2,
+.flags-container h3 {
+    text-align: center;
+    margin-bottom: 1em;
+} 
+
+.flags-container #total-results {
+    font-size: 1.6rem;
+    color: #fff;
+    background: #222;
+    padding: .2em .4em;
+    border-radius: .6em;
+}
+
+/* media & container queries */
+@media all and (width < 1024px) {
+    .container {
+        width: 98vw;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .filter-inner-container input[type="checkbox"]{
+        height:28px;
+        width:28px;
+    }
+}
+
+
+@container (width < 840px) {
+    #filter-dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .filter-container {
+        grid-column: 1 / 1;
+    }
+    #submit-filters-button {
+        grid-column: 1 / 1;
+    }
+}
