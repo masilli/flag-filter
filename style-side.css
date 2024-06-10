@@ -127,14 +127,19 @@ header {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
+    text-transform: capitalize;
   }
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 30px;
+    /* border: 1px solid #888; */
+    border-radius: 20px;
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
+  }
+  .modal img {
+    margin: 20px auto;
   }
   .close {
     color: #aaa;
