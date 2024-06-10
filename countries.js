@@ -1611,7 +1611,7 @@ export const countriesArray = [
   },
   {
     id: 162,
-    name: "South africa",
+    name: "South Africa",
     iso: "za",
     capital: "Pretoria",
     flag: "flags/za.svg",
