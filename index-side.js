@@ -1,4 +1,5 @@
-import { countriesArray } from "./countries.js";
+//import { countriesArray } from "./countries.js";
+import { allRegions as countriesArray } from "./allRegionsV2.js";
 
 const contDiv = document.getElementById("content");
 const totalResults = document.getElementById("total-results");
@@ -95,7 +96,7 @@ function renderFlags() {
         modalCountryCapital.textContent = `Capital: ${country.capital}`;
         modalCountryContinent.textContent = `Continent: ${country.continent}`;
         // modalCountryColors.textContent = `Colors: ${country.colors.join(", ")}`;
-        modalCountryWiki.innerHTML = `<span>More information</span>: <a href="https://en.wikipedia.org/wiki/Flag_of_${country.name}" target="_blank">wikipedia</a>`;
+        modalCountryWiki.innerHTML = `<a href="https://en.wikipedia.org/wiki/Flag_of_${country.name}" target="_blank">More information on this flag</a>`;
         modal.style.display = "block";
       }
     });
