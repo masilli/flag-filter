@@ -1,4 +1,3 @@
-//import { countriesArray } from "./countries.js";
 import { allRegions as countriesArray } from "./allRegionsV2.js";
 
 const contDiv = document.getElementById("content");
@@ -6,23 +5,8 @@ const totalResults = document.getElementById("total-results");
 
 const filterDash = document.getElementById("filter-dashboard");
 
-//const chosenContinents = document.getElementById("continent-options")
-
-//console.log(countriesArray)
 
 let matchingFlags = countriesArray;
-
-// filterDash.addEventListener('submit', function (e) {
-//     e.preventDefault()
-
-//     matchingFlags = countriesArray.filter(function (country) {
-//         let matchesContinent = chosenContinents.value === '' || chosenContinents.value === country.continent
-
-//         return matchesContinent
-//     });
-
-//     renderFlags()
-// })
 
 filterDash.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -37,8 +21,18 @@ filterDash.addEventListener("submit", function (e) {
       '#color-options input[type="checkbox"]:checked'
     ),
   ].map((checkbox) => checkbox.value);
+  const selectedFlagTypes = [
+    ...document.querySelectorAll(
+      '#flag-options input[type="checkbox"]:checked'
+    ),
+  ].map((checkbox) => checkbox.value);
+  const selectedSymbols = [
+    ...document.querySelectorAll(
+      '#symbol-options input[type="checkbox"]:checked'
+    ),
+  ].map((checkbox) => checkbox.value);
 
-  if (selectedContinents.length === 0 || selectedColors.length === 0) {
+  if (selectedContinents.length === 0) {
     //console.log("empty: "+selectedContinents)
     matchingFlags = [];
   } else {
@@ -48,8 +42,15 @@ filterDash.addEventListener("submit", function (e) {
         selectedContinents.includes(country.continent);
       let includeColors =
         selectedColors.length === 0 ||
-        selectedColors.some((color) => country.colors.includes(color));
-      return includeContinents && includeColors;
+        selectedColors.every((color) => country.colors.includes(color));
+      let includeFlagTypes =
+        selectedFlagTypes.length === 0 ||
+        selectedFlagTypes.includes(country.flagType);
+      let includeSymbols = 
+        selectedSymbols.length === 0 || 
+        selectedSymbols.some(symbol => symbol === 'none' ? 
+          !country.hasSymbol : country.symbol.includes(symbol));
+      return includeContinents && includeColors && includeFlagTypes && includeSymbols;
     });
   }
   renderFlags();
@@ -65,7 +66,6 @@ function renderFlags() {
   matchingFlags.forEach((region) => {
     const countryNameElement = document.createElement("p");
     countryNameElement.classList.add("country");
-    // countryNameElement.innerHTML = `<img src="${region.flag}"><br><span class="region-name">${region.name}</span>`
     countryNameElement.innerHTML = `
     <figure>
         <img src="${region.flag}" alt="${region.name} flag">
@@ -85,7 +85,6 @@ function renderFlags() {
     const modalCountryContinent = document.getElementById(
       "modal-country-continent"
     );
-    const modalCountryColors = document.getElementById("modal-country-colors");
     const modalCountryWiki = document.getElementById("modal-country-wikipedia");
 
     countryNameElement.querySelector("figure").addEventListener("click", () => {
@@ -95,8 +94,7 @@ function renderFlags() {
         modalCountryFlag.src = `${country.flag}`;
         modalCountryCapital.textContent = `Capital: ${country.capital}`;
         modalCountryContinent.textContent = `Continent: ${country.continent}`;
-        // modalCountryColors.textContent = `Colors: ${country.colors.join(", ")}`;
-        modalCountryWiki.innerHTML = `<a href="https://en.wikipedia.org/wiki/Flag_of_${country.name}" target="_blank">More information on this flag</a>`;
+        modalCountryWiki.innerHTML = `<a href="https://en.wikipedia.org/wiki/Flag_of_${country.name}" target="_blank">More information</a>`;
         modal.style.display = "block";
       }
     });
