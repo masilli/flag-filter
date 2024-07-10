@@ -31,7 +31,7 @@ header {
 #filter-dashboard .info {
     color: #666;
     font-size: .75rem;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .flags-container {

@@ -11,6 +11,11 @@ let matchingFlags = countriesArray;
 filterDash.addEventListener("submit", function (e) {
   e.preventDefault();
 
+  const independentCountries = [
+    ...document.querySelectorAll(
+      '#independent-options input[type="checkbox"]:checked'
+    ),
+  ].map((checkbox) => checkbox.value);
   const selectedContinents = [
     ...document.querySelectorAll(
       '#continent-options input[type="checkbox"]:checked'
@@ -37,6 +42,9 @@ filterDash.addEventListener("submit", function (e) {
     matchingFlags = [];
   } else {
     matchingFlags = countriesArray.filter((country) => {
+      let includeIndependentContinents =
+        independentCountries.length === 0 ||
+        independentCountries.includes(country.isCountry);
       let includeContinents =
         selectedContinents.length === 0 ||
         selectedContinents.includes(country.continent);
@@ -50,7 +58,7 @@ filterDash.addEventListener("submit", function (e) {
         selectedSymbols.length === 0 || 
         selectedSymbols.some(symbol => symbol === 'none' ? 
           !country.hasSymbol : country.symbol.includes(symbol));
-      return includeContinents && includeColors && includeFlagTypes && includeSymbols;
+      return includeIndependentContinents && includeContinents && includeColors && includeFlagTypes && includeSymbols;
     });
   }
   renderFlags();
