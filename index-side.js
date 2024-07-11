@@ -8,9 +8,65 @@ const filterDash = document.getElementById("filter-dashboard");
 
 let matchingFlags = countriesArray;
 
-filterDash.addEventListener("submit", function (e) {
-  e.preventDefault();
+// filterDash.addEventListener("submit", function (e) {
+//   e.preventDefault();
 
+//   const independentOptions = [
+//     ...document.querySelectorAll(
+//       '#independent-options input[type="checkbox"]:checked'
+//     ),
+//   ].map((checkbox) => checkbox.value);
+//   const selectedContinents = [
+//     ...document.querySelectorAll(
+//       '#continent-options input[type="checkbox"]:checked'
+//     ),
+//   ].map((checkbox) => checkbox.value);
+//   const selectedColors = [
+//     ...document.querySelectorAll(
+//       '#color-options input[type="checkbox"]:checked'
+//     ),
+//   ].map((checkbox) => checkbox.value);
+//   const selectedFlagTypes = [
+//     ...document.querySelectorAll(
+//       '#flag-options input[type="checkbox"]:checked'
+//     ),
+//   ].map((checkbox) => checkbox.value);
+//   const selectedSymbols = [
+//     ...document.querySelectorAll(
+//       '#symbol-options input[type="checkbox"]:checked'
+//     ),
+//   ].map((checkbox) => checkbox.value);
+
+//   if (selectedContinents.length === 0) {
+//     //console.log("empty: "+selectedContinents)
+//     matchingFlags = [];
+//   } else {
+//     matchingFlags = countriesArray.filter((country) => {
+//       let includeIndependent = 
+//         independentOptions.length === 0 ||
+//         (independentOptions.includes("independent") && country.isCountry) ||
+//         (independentOptions.includes("not-independent") && !country.isCountry);
+//       let includeContinents =
+//         selectedContinents.length === 0 ||
+//         selectedContinents.includes(country.continent);
+//       let includeColors =
+//         selectedColors.length === 0 ||
+//         selectedColors.every((color) => country.colors.includes(color));
+//       let includeFlagTypes =
+//         selectedFlagTypes.length === 0 ||
+//         selectedFlagTypes.includes(country.flagType);
+//       let includeSymbols = 
+//         selectedSymbols.length === 0 || 
+//         selectedSymbols.some(symbol => symbol === 'none' ? 
+//           !country.hasSymbol : country.symbol.includes(symbol));
+//       return includeIndependent && includeContinents && includeColors && includeFlagTypes && includeSymbols;
+//     });
+//   }
+//   renderFlags();
+// });
+
+// Define the filtering function
+function filterCountries() {
   const independentOptions = [
     ...document.querySelectorAll(
       '#independent-options input[type="checkbox"]:checked'
@@ -38,7 +94,6 @@ filterDash.addEventListener("submit", function (e) {
   ].map((checkbox) => checkbox.value);
 
   if (selectedContinents.length === 0) {
-    //console.log("empty: "+selectedContinents)
     matchingFlags = [];
   } else {
     matchingFlags = countriesArray.filter((country) => {
@@ -63,6 +118,11 @@ filterDash.addEventListener("submit", function (e) {
     });
   }
   renderFlags();
+}
+
+// Attach event listeners to all checkboxes
+document.querySelectorAll('#independent-options input[type="checkbox"], #continent-options input[type="checkbox"], #color-options input[type="checkbox"], #flag-options input[type="checkbox"], #symbol-options input[type="checkbox"]').forEach((checkbox) => {
+  checkbox.addEventListener('change', filterCountries);
 });
 
 renderFlags();
