@@ -148,12 +148,11 @@ function renderFlags() {
     const span = document.getElementsByClassName("close")[0];
     const modalCountryName = document.getElementById("modal-country-name");
     const modalCountryFlag = document.getElementById("modal-country-flag");
-    const modalCountryCapital = document.getElementById(
-      "modal-country-capital"
-    );
-    const modalCountryContinent = document.getElementById(
-      "modal-country-continent"
-    );
+    const modalCountryCapital = document.getElementById("modal-country-capital");
+    const modalCountryContinent = document.getElementById("modal-country-continent");
+    const modalCountryColors = document.getElementById("modal-country-colors");
+    const modalCountryFlagType = document.getElementById("modal-country-flag-type");
+    const modalCountryFlagSymbol = document.getElementById("modal-country-flag-symbol");
     const modalCountryWiki = document.getElementById("modal-country-wikipedia");
 
     countryNameElement.querySelector("figure").addEventListener("click", () => {
@@ -163,6 +162,9 @@ function renderFlags() {
         modalCountryFlag.src = `${country.flag}`;
         modalCountryCapital.textContent = `Capital: ${country.capital}`;
         modalCountryContinent.textContent = `Continent: ${country.continent}`;
+        modalCountryColors.textContent = `Colors: ${country.colors}`;
+        modalCountryFlagType.textContent = `Flag type: ${country.flagType}`;
+        modalCountryFlagSymbol.textContent = `Symbol: ${country.symbol}`;
         modalCountryWiki.innerHTML = `<a href="https://en.wikipedia.org/wiki/Flag_of_${country.name}" target="_blank">More information</a>`;
         modal.style.display = "block";
       }
