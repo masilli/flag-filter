@@ -109,7 +109,8 @@ function filterCountries() {
         selectedColors.every((color) => country.colors.includes(color));
       let includeFlagTypes =
         selectedFlagTypes.length === 0 ||
-        selectedFlagTypes.includes(country.flagType);
+        // selectedFlagTypes.includes(country.flagType);
+        selectedFlagTypes.every((type) => country.flagType.includes(type));
       let includeSymbols = 
         selectedSymbols.length === 0 || 
         selectedSymbols.some(symbol => symbol === 'none' ? 
@@ -145,7 +146,7 @@ function renderFlags() {
 
     // myModal
     const modal = document.getElementById("myModal");
-    const span = document.getElementsByClassName("close")[0];
+    const close = document.getElementsByClassName("close")[0];
     const modalCountryName = document.getElementById("modal-country-name");
     const modalCountryFlag = document.getElementById("modal-country-flag");
     const modalCountryCapital = document.getElementById("modal-country-capital");
@@ -167,18 +168,28 @@ function renderFlags() {
         modalCountryFlagSymbol.textContent = `Symbol: ${country.symbol}`;
         modalCountryWiki.innerHTML = `<a href="https://en.wikipedia.org/wiki/Flag_of_${country.name}" target="_blank">More information</a>`;
         modal.style.display = "block";
+        document.body.style.overflow = "hidden";
       }
     });
 
-    span.onclick = function () {
+    close.onclick = function () {
       modal.style.display = "none";
+      document.body.style.overflow = "auto";
     };
 
     window.onclick = function (event) {
       if (event.target === modal) {
         modal.style.display = "none";
+        document.body.style.overflow = "auto";
       }
     };
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
 
     contDiv.appendChild(countryNameElement);
   });

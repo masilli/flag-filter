@@ -9,7 +9,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "vertical",
     symbol: ["circle", "sun"],
   },
   {
@@ -48,7 +48,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "vertical",
     symbol: ["moon", "star"],
   },
   {
@@ -61,7 +61,7 @@ export const allRegions = [
     continent: "oceania",
     colors: ["blue", "red", "white"],
     hasSymbol: true,
-    flagType: "diagonal",
+    flagType: "triangle",
     symbol: ["animal", "weapon"],
   },
   {
@@ -74,7 +74,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: ["coat-arms"],
   },
   {
@@ -87,7 +87,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["star", "weapon", "other"],
   },
   {
@@ -126,7 +126,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: "triangle",
     symbol: ["sun"],
   },
   {
@@ -139,7 +139,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["sun"],
   },
   {
@@ -152,7 +152,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -165,7 +165,7 @@ export const allRegions = [
     continent: "south-america",
     colors: ["blue", "red", "yellow"],
     hasSymbol: true,
-    flagType: "solid",
+    flagType: "horizontal",
     symbol: ["star","other"],
   },
   {
@@ -191,7 +191,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -204,7 +204,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["moon", "star"],
   },
   {
@@ -217,7 +217,7 @@ export const allRegions = [
     continent: "europe",
     colors: ["blue", "white", "gold"],
     hasSymbol: true,
-    flagType: "bicolor",
+    flagType: "vertical",
     symbol: ["star", "animal", "coat-arms"],
   },
   {
@@ -230,7 +230,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "north-america",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["triangle","horizontal"],
     symbol: [],
   },
   {
@@ -243,7 +243,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: ["vertical","triangle"],
     symbol: [],
   },
   {
@@ -269,7 +269,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: ["weapon"],
   },
   {
@@ -282,7 +282,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["other"],
   },
   {
@@ -295,7 +295,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: [],
   },
   {
@@ -308,7 +308,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["circle", "coat-arms"],
   },
   {
@@ -321,7 +321,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -360,7 +360,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["coat-arms", "animal"],
   },
   {
@@ -386,7 +386,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -399,7 +399,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: "solid",
     symbol: ["circle", "star","other"],
   },
   {
@@ -438,7 +438,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -451,7 +451,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["star"],
   },
   {
@@ -464,8 +464,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "diagonal",
-    symbol: ["star"],
+    flagType: "quartered",
+    symbol: ["star", "circle", "cross"],
   },
   {
     id: 37,
@@ -477,7 +477,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["star"],
   },
   {
@@ -490,7 +490,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["other"],
   },
   {
@@ -503,7 +503,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: ["star"],
   },
   {
@@ -516,7 +516,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: ["other"],
   },
   {
@@ -529,7 +529,7 @@ export const allRegions = [
     continent: "europe",
     colors: ["white", "blue", "yellow"],
     hasSymbol: false,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: [],
   },
   {
@@ -555,7 +555,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "quartered",
+    flagType: ["horizontal","quartered"],
     symbol: ["star"],
   },
   {
@@ -568,7 +568,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: [],
   },
   {
@@ -581,7 +581,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "canton",
+    flagType: ["canton","horizontal"],
     symbol: ["star"],
   },
   {
@@ -633,7 +633,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "south-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -646,7 +646,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["triangle","horizontal"],
     symbol: ["star", "moon"],
   },
   {
@@ -672,7 +672,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -685,7 +685,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: [],
   },
   {
@@ -698,7 +698,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["coat-arms", "animal"],
   },
   {
@@ -711,7 +711,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["horizontal", "triangle"],
     symbol: ["star"],
   },
   {
@@ -724,7 +724,7 @@ export const allRegions = [
     continent: "south-america",
     colors: ["blue", "yellow", "white"],
     hasSymbol: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["star"],
   },
   {
@@ -750,7 +750,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["horizontal","triangle"],
     symbol: [],
   },
   {
@@ -789,7 +789,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["horizontal","triangle"],
     symbol: ["star"],
   },
   {
@@ -828,7 +828,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["coat-arms", "animal"],
   },
   {
@@ -841,7 +841,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["animal"],
   },
   {
@@ -854,7 +854,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["coat-arms"],
   },
   {
@@ -880,7 +880,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["horizontal","triangle"],
     symbol: ["coat-arms"],
   },
   {
@@ -893,7 +893,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: "triangle",
     symbol: ["coat-arms", "circle"],
   },
   {
@@ -919,7 +919,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["weapon", "other"],
   },
   {
@@ -932,7 +932,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["circle", "star"],
   },
   {
@@ -1023,7 +1023,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: [],
   },
   {
@@ -1036,7 +1036,7 @@ export const allRegions = [
     continent: "oceania",
     colors: ["red", "white"],
     hasSymbol: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["circle", "sun"],
   },
   {
@@ -1049,7 +1049,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1062,7 +1062,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1088,7 +1088,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1101,7 +1101,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["star"],
   },
   {
@@ -1114,7 +1114,7 @@ export const allRegions = [
     continent: "europe",
     colors: ["red", "white"],
     hasSymbol: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["other"],
   },
   {
@@ -1127,7 +1127,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "canton",
+    flagType: ["canton","horizontal"],
     symbol: ["cross"],
   },
   {
@@ -1140,7 +1140,7 @@ export const allRegions = [
     continent: "north-america",
     colors: ["red", "white"],
     hasSymbol: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["circle"],
   },
   {
@@ -1153,7 +1153,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["quartered","triangle"],
     symbol: ["circle", "star", "other"],
   },
   {
@@ -1179,7 +1179,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: ["animal", "weapon", "coat-arms"],
   },
   {
@@ -1205,7 +1205,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: [],
   },
   {
@@ -1218,7 +1218,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["star"],
   },
   {
@@ -1231,7 +1231,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "south-america",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: "triangle",
     symbol: [],
   },
   {
@@ -1244,7 +1244,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["coat-arms"],
   },
   {
@@ -1257,7 +1257,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["star"],
   },
   {
@@ -1283,7 +1283,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1309,7 +1309,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["circle", "sun"],
   },
   {
@@ -1322,8 +1322,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 103,
@@ -1335,7 +1335,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["circle", "sun"],
   },
   {
@@ -1348,7 +1348,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["circle", "sun"],
   },
   {
@@ -1361,8 +1361,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: [],
   },
   {
     id: 106,
@@ -1387,7 +1387,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["star"],
   },
   {
@@ -1400,7 +1400,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: [],
   },
   {
@@ -1413,7 +1413,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "quartered",
+    flagType: ["quartered","triangle"],
     symbol: ["cross"],
   },
   {
@@ -1452,7 +1452,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "diagonal",
+    flagType: ["triangle","horizontal"],
     symbol: ["star"],
   },
   {
@@ -1478,7 +1478,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["weapon"],
   },
   {
@@ -1491,7 +1491,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["animal", "sun", "other"],
   },
   {
@@ -1517,7 +1517,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1543,7 +1543,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["circle"],
   },
   {
@@ -1556,7 +1556,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1582,7 +1582,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["other"],
   },
   {
@@ -1595,7 +1595,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "canton",
+    flagType: ["canton","horizontal"],
     symbol: ["star"],
   },
   {
@@ -1608,7 +1608,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["moon", "star"],
   },
   {
@@ -1621,7 +1621,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["other", "cross"],
   },
   {
@@ -1634,7 +1634,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1647,7 +1647,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1673,7 +1673,7 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: [],
   },
   {
@@ -1686,7 +1686,7 @@ export const allRegions = [
     continent: "europe",
     colors: ["blue", "yellow", "red"],
     hasSymbol: true,
-    flagType: "tricolor",
+    flagType: "vertical",
     symbol: ["cross"],
   },
   {
@@ -1699,7 +1699,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "tricolor",
+    flagType: "horizontal",
     symbol: ["sun"],
   },
   {
@@ -1712,7 +1712,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "canton",
+    flagType: ["canton","horizontal"],
     symbol: ["moon", "star"],
   },
   {
@@ -1725,7 +1725,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "solid",
     symbol: ["circle", "sun"],
   },
   {
@@ -1738,8 +1738,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: [],
   },
   {
     id: 135,
@@ -1751,7 +1751,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "vertical",
     symbol: ["circle", "sun"],
   },
   {
@@ -1764,7 +1764,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "diagonal",
     symbol: ["circle", "sun"],
   },
   {
@@ -1777,7 +1777,7 @@ export const allRegions = [
     continent: "north-america",
     colors: ["color", "color"],
     hasSymbol: true,
-    flagType: "bicolor",
+    flagType: ["triangle","horizontal"],
     symbol: ["circle", "sun"],
   },
   {
@@ -1790,7 +1790,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["circle", "sun"],
   },
   {
@@ -1803,8 +1803,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 140,
@@ -1816,7 +1816,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "vertical",
     symbol: ["circle", "sun"],
   },
   {
@@ -1829,7 +1829,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "vertical",
     symbol: ["circle", "sun"],
   },
   {
@@ -1842,8 +1842,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 143,
@@ -1855,7 +1855,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "vertical",
     symbol: ["circle", "sun"],
   },
   {
@@ -1868,8 +1868,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["animal"],
   },
   {
     id: 145,
@@ -1881,7 +1881,7 @@ export const allRegions = [
     continent: "north-america",
     colors: ["color", "color"],
     hasSymbol: true,
-    flagType: "bicolor",
+    flagType: "canton",
     symbol: ["circle", "sun"],
   },
   {
@@ -1894,7 +1894,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "solid",
     symbol: ["circle", "sun"],
   },
   {
@@ -1907,8 +1907,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["triangle","horizontal",],
+    symbol: ["star", "weapon", "other"],
   },
   {
     id: 148,
@@ -1920,8 +1920,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["star"],
   },
   {
     id: 149,
@@ -1933,8 +1933,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: ["sun"],
   },
   {
     id: 150,
@@ -1946,8 +1946,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["star"],
   },
   {
     id: 151,
@@ -1959,8 +1959,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "triangle",
+    symbol: ["moon", "sun"],
   },
   {
     id: 152,
@@ -1972,8 +1972,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 153,
@@ -1983,10 +1983,10 @@ export const allRegions = [
     flag: "flags/nc.svg",
     iso: "nc",
     continent: "oceania",
-    colors: ["color", "color"],
+    colors: ["blue", "red", "green", "yellow", "black"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["circle", "sun", "weapon"],
   },
   {
     id: 154,
@@ -1998,8 +1998,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["star", "other"],
   },
   {
     id: 155,
@@ -2011,8 +2011,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["circle", "coat-arms"],
   },
   {
     id: 156,
@@ -2024,7 +2024,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "horizontal",
     symbol: ["circle", "sun"],
   },
   {
@@ -2037,8 +2037,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: [],
   },
   {
     id: 158,
@@ -2048,10 +2048,10 @@ export const allRegions = [
     flag: "flags/nu.svg",
     iso: "nu",
     continent: "oceania",
-    colors: ["color", "color"],
+    colors: ["yellow", "red", "white", "blue"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["other"],
   },
   {
     id: 159,
@@ -2061,10 +2061,10 @@ export const allRegions = [
     flag: "flags/nf.svg",
     iso: "nf",
     continent: "oceania",
-    colors: ["color", "color"],
+    colors: ["green", "white"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: ["other"],
   },
   {
     id: 160,
@@ -2076,8 +2076,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["circle", "star"],
   },
   {
     id: 161,
@@ -2089,8 +2089,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["sun"],
   },
   {
     id: 162,
@@ -2100,10 +2100,10 @@ export const allRegions = [
     flag: "flags/gb-nir.svg",
     iso: "gb-nir",
     continent: "europe",
-    colors: ["color", "color"],
+    colors: ["white", "red"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "quartered",
+    symbol: ["cross", "star", "other"],
   },
   {
     id: 163,
@@ -2113,10 +2113,10 @@ export const allRegions = [
     flag: "flags/mp.svg",
     iso: "mp",
     continent: "oceania",
-    colors: ["color", "color"],
+    colors: ["blue", "white"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["circle", "star", "other"],
   },
   {
     id: 164,
@@ -2141,8 +2141,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["weapon"],
   },
   {
     id: 166,
@@ -2154,8 +2154,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: ["moon", "star"],
   },
   {
     id: 167,
@@ -2167,7 +2167,7 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
+    flagType: "solid",
     symbol: ["circle", "moon"],
   },
   {
@@ -2180,8 +2180,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "quartered",
+    symbol: ["star"],
   },
   {
     id: 169,
@@ -2193,8 +2193,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: ["star", "animal"],
   },
   {
     id: 170,
@@ -2206,8 +2206,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["circle", "star"],
   },
   {
     id: 171,
@@ -2219,8 +2219,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "south-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: [],
   },
   {
     id: 172,
@@ -2232,8 +2232,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["triangle", "horizontal"],
+    symbol: ["star", "sun"],
   },
   {
     id: 173,
@@ -2243,10 +2243,10 @@ export const allRegions = [
     flag: "flags/pn.svg",
     iso: "pn",
     continent: "oceania",
-    colors: ["color", "color"],
+    colors: ["blue", "yellow", "green", "red", "white"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["coat-arms", "other"],
   },
   {
     id: 174,
@@ -2258,8 +2258,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 175,
@@ -2271,8 +2271,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: ["coat-arms"],
   },
   {
     id: 176,
@@ -2284,8 +2284,8 @@ export const allRegions = [
     continent: "north-america",
     colors: ["color", "color"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["triangle","horizontal"],
+    symbol: ["star"],
   },
   {
     id: 177,
@@ -2297,8 +2297,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["vertical","triangle"],
+    symbol: [],
   },
   {
     id: 178,
@@ -2310,8 +2310,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: [],
   },
   {
     id: 179,
@@ -2323,8 +2323,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "tricolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: [],
   },
   {
     id: 180,
@@ -2336,8 +2336,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 181,
@@ -2349,8 +2349,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["sun"],
   },
   {
     id: 182,
@@ -2360,10 +2360,10 @@ export const allRegions = [
     flag: "flags/sh-hl.svg",
     iso: "sh-hl",
     continent: "africa",
-    colors: ["color", "color"],
+    colors: ["blue", "red", "white", "yellow"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["coat-arms", "other", "animal"],
   },
   {
     id: 183,
@@ -2375,8 +2375,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: ["star"],
   },
   {
     id: 184,
@@ -2388,8 +2388,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["solid","triangle"],
+    symbol: ["other"],
   },
   {
     id: 185,
@@ -2401,8 +2401,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: ["other"],
   },
   {
     id: 186,
@@ -2414,8 +2414,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["star"],
   },
   {
     id: 187,
@@ -2427,8 +2427,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["coat-arms"],
   },
   {
     id: 188,
@@ -2440,8 +2440,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["triangle","horizontal"],
+    symbol: ["star"],
   },
   {
     id: 189,
@@ -2453,8 +2453,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["weapon", "other"],
   },
   {
     id: 190,
@@ -2464,10 +2464,10 @@ export const allRegions = [
     flag: "flags/gb-sct.svg",
     iso: "gb-sct",
     continent: "europe",
-    colors: ["color", "color"],
+    colors: ["blue", "white"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "quartered",
+    symbol: ["cross"],
   },
   {
     id: 191,
@@ -2479,8 +2479,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: ["star"],
   },
   {
     id: 192,
@@ -2492,8 +2492,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["coat-arms"],
   },
   {
     id: 193,
@@ -2505,8 +2505,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: [],
   },
   {
     id: 194,
@@ -2518,8 +2518,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 195,
@@ -2531,8 +2531,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["star", "moon"],
   },
   {
     id: 196,
@@ -2542,10 +2542,10 @@ export const allRegions = [
     flag: "flags/sx.svg",
     iso: "sx",
     continent: "north-america",
-    colors: ["color", "color"],
+    colors: ["white", "red", "blue", "yellow"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["horizontal", "triangle"],
+    symbol: ["coat-arms"],
   },
   {
     id: 197,
@@ -2557,8 +2557,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["coat-arms"],
   },
   {
     id: 198,
@@ -2570,8 +2570,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["coat-arms"],
   },
   {
     id: 199,
@@ -2583,8 +2583,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: ["star"],
   },
   {
     id: 200,
@@ -2596,8 +2596,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["star"],
   },
   {
     id: 201,
@@ -2606,11 +2606,11 @@ export const allRegions = [
     capital: "Pretoria",
     flag: "flags/za.svg",
     colors: ["green", "black", "red", "white", "blue"],
-    hasSymbol: true,
+    hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "diagonal",
-    symbol: ["other"],
+    flagType: ["horizontal", "triangle"],
+    symbol: [],
   },
   {
     id: 202,
@@ -2622,8 +2622,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["circle", "other"],
   },
   {
     id: 203,
@@ -2635,8 +2635,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["horizontal", "triangle"],
+    symbol: ["star"],
   },
   {
     id: 204,
@@ -2648,8 +2648,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["coat-arms"],
   },
   {
     id: 205,
@@ -2661,8 +2661,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: ["animal", "weapon"],
   },
   {
     id: 206,
@@ -2674,8 +2674,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["horizontal", "triangle"],
+    symbol: [],
   },
   {
     id: 207,
@@ -2687,8 +2687,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["horizontal", "triangle"],
+    symbol: [],
   },
   {
     id: 208,
@@ -2700,8 +2700,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["star"],
   },
   {
     id: 209,
@@ -2726,8 +2726,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["cross"],
   },
   {
     id: 211,
@@ -2739,8 +2739,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["star"],
   },
   {
     id: 212,
@@ -2752,8 +2752,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["sun"],
   },
   {
     id: 213,
@@ -2765,8 +2765,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["star", "other"],
   },
   {
     id: 214,
@@ -2778,8 +2778,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: [],
   },
   {
     id: 215,
@@ -2791,8 +2791,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 216,
@@ -2804,8 +2804,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "triangle",
+    symbol: ["star"],
   },
   {
     id: 217,
@@ -2817,8 +2817,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["canton","horizontal"],
+    symbol: ["star"],
   },
   {
     id: 218,
@@ -2828,10 +2828,10 @@ export const allRegions = [
     flag: "flags/tk.svg",
     iso: "tk",
     continent: "oceania",
-    colors: ["color", "color"],
+    colors: ["blue", "white", "yellow"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["star", "other"],
   },
   {
     id: 219,
@@ -2843,8 +2843,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["cross"],
   },
   {
     id: 220,
@@ -2856,8 +2856,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "south-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "diagonal",
+    symbol: [],
   },
   {
     id: 221,
@@ -2867,10 +2867,10 @@ export const allRegions = [
     flag: "flags/sh-ta.svg",
     iso: "sh-ta",
     continent: "africa",
-    colors: ["color", "color"],
+    colors: ["blue", "red", "white", "yellow"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["coat-arms", "other", "animal"],
   },
   {
     id: 222,
@@ -2882,8 +2882,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["circle","moon", "star"],
   },
   {
     id: 223,
@@ -2895,8 +2895,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["moon", "star"],
   },
   {
     id: 224,
@@ -2908,8 +2908,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["moon", "star", "other"],
   },
   {
     id: 225,
@@ -2919,10 +2919,10 @@ export const allRegions = [
     flag: "flags/tc.svg",
     iso: "tc",
     continent: "north-america",
-    colors: ["color", "color"],
+    colors: ["blue", "red", "white", "yellow", "green"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["coat-arms", "other", "animal"],
   },
   {
     id: 226,
@@ -2934,8 +2934,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["star", "other"],
   },
   {
     id: 227,
@@ -2943,12 +2943,12 @@ export const allRegions = [
     iso: "ug",
     capital: "Kampala",
     flag: "flags/ug.svg",
-    colors: ["red", "yellow", "black"],
+    colors: ["red", "yellow", "black", "white"],
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["circle", "animal"],
   },
   {
     id: 228,
@@ -2960,8 +2960,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 229,
@@ -2973,8 +2973,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: [],
   },
   {
     id: 230,
@@ -2999,8 +2999,8 @@ export const allRegions = [
     continent: "undefined",
     colors: ["color", "color"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["other"],
   },
   {
     id: 232,
@@ -3012,8 +3012,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "north-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["canton","horizontal"],
+    symbol: ["star"],
   },
   {
     id: 233,
@@ -3025,8 +3025,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["canton","horizontal"],
+    symbol: ["sun"],
   },
   {
     id: 234,
@@ -3038,8 +3038,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["moon", "star"],
   },
   {
     id: 235,
@@ -3051,8 +3051,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "oceania",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["triangle","horizontal"],
+    symbol: ["circle"],
   },
   {
     id: 236,
@@ -3064,8 +3064,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "europe",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "vertical",
+    symbol: ["coat-arms"],
   },
   {
     id: 237,
@@ -3077,8 +3077,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "south-america",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["star"],
   },
   {
     id: 238,
@@ -3090,8 +3090,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["star"],
   },
   {
     id: 239,
@@ -3101,10 +3101,10 @@ export const allRegions = [
     flag: "flags/vg.svg",
     iso: "vg",
     continent: "north-america",
-    colors: ["color", "color"],
+    colors: ["blue", "red", "white", "yellow", "green"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "canton",
+    symbol: ["coat-arms", "other"],
   },
   {
     id: 240,
@@ -3114,10 +3114,10 @@ export const allRegions = [
     flag: "flags/vi.svg",
     iso: "vi",
     continent: "north-america",
-    colors: ["color", "color"],
+    colors: ["white", "yellow", "blue", "green", "red"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["animal", "weapon"],
   },
   {
     id: 241,
@@ -3127,10 +3127,10 @@ export const allRegions = [
     flag: "flags/gb-wls.svg",
     iso: "gb-wls",
     continent: "europe",
-    colors: ["color", "color"],
+    colors: ["white", "green", "red"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "horizontal",
+    symbol: ["animal"],
   },
   {
     id: 242,
@@ -3140,10 +3140,10 @@ export const allRegions = [
     flag: "flags/eh.svg",
     iso: "eh",
     continent: "africa",
-    colors: ["color", "color"],
+    colors: ["red", "black", "white", "green"],
     hasSymbol: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["triangle","horizontal"],
+    symbol: ["moon", "star"],
   },
   {
     id: 243,
@@ -3155,8 +3155,8 @@ export const allRegions = [
     hasSymbol: false,
     continent: "asia",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "hoirzontal",
+    symbol: [],
   },
   {
     id: 244,
@@ -3168,8 +3168,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: "solid",
+    symbol: ["animal", "other"],
   },
   {
     id: 245,
@@ -3181,8 +3181,8 @@ export const allRegions = [
     hasSymbol: true,
     continent: "africa",
     isCountry: true,
-    flagType: "bicolor",
-    symbol: ["circle", "sun"],
+    flagType: ["triangle","horizontal"],
+    symbol: ["animal", "star"],
   },
 ];
 
@@ -3190,5 +3190,21 @@ export const allRegions = [
 
 // console.log(uniqueContinents);
 
-const uniqueSymbols = [...new Set(allRegions.flatMap(country => country.symbol))];
-console.log("symbols: " + uniqueSymbols);
+// const uniqueSymbols = [...new Set(allRegions.flatMap(country => country.symbol))];
+// console.log("symbols: " + uniqueSymbols);
+
+// const uniqueSymbols = [...new Set(allRegions.flatMap(country => 
+//   country.symbol.map(symbol => symbol.trim().toLowerCase())
+// ))];
+
+// console.log("symbols: " + uniqueSymbols);
+
+// const allSymbols = allRegions.flatMap(country => country.symbol);
+// const duplicates = allSymbols.filter((symbol, index, self) => 
+//   self.indexOf(symbol) !== index
+// );
+
+// console.log("duplicates: " + duplicates);
+
+// let filteredRegions = allRegions.filter(region => region.hasSymbol === false && region.symbol.length != 0);
+// console.log(filteredRegions);
